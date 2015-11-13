@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Summary</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#"><img src="img/logo-stv.png" alt="STV-LOGO"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Rate card</a></li>
+                    <li><a href="#">Summary<span>(2)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile</a>
+                        <ul class="dropdown-menu profile-dropdown">
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <img src="img/carosol-indicator1.png" class="img-circle">
+                                    </span>Adreaa paulwaker
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Mange Pickups</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <!--/. Navigation -->
+    
+    <!-- summery -->
+    <div class="container sumpad">
+        <div class="col-md-12">
+            <div class="row sumbrd">
+                <div class="bgblk">
+                    <h4>Summery<span>(2)</span></h4>
+                </div>
+                <div class="col-md-12 intxt" style="padding-top:20px; padding-left: 40px;">
+                    <div class="row">
+                        <div>
+                            <p>payment:</p>
+                            <p>COP</p>
+                        </div>
+                        <div>
+                            <p>Material</p>
+                            <ol>
+                                <li>Plastic</li>
+                                <li>Glass Bottles</li>
+                                <li>Milk</li>
+                            </ol>  
+                        </div>
+                    </div>
+                </div>
+                <div class="sumtxt">
+                    <a href="#"  class="btn btn-sl">DONE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- summery -->
+    
+    <!-- Footer -->
+    <footer class="fot">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 fot-pad">
+                    <ul class="list-inline">
+                        <li><a href="#"><img src="img/linkedin.png" alt="linkedin"></a></li>
+                        <li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="img/fb.png" alt="facebook"></a></li>
+                        <li>|</li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/. Footer -->
+   
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+ <script type="text/javascript">
+    
+        $(document).ready(function(){
+           $(".login").hide();
+           $(".tab-add").hide();
+           $(".tab-time").hide();
+            $(".log").click(function(){
+              $(".login").show('slow');
+                $(".signin").hide('slow');
+            });
+             $(".sign").click(function(){
+              $(".login").hide('slow');
+                $(".signin").show('slow');
+            });
+/*
+           if ($('.tab-2').data('clicked')){
+               console.log("hi");
+               $(".tab-add").show();
+               $(".tab-time").hide();
+               $(".tab-sign").hide();
+                   
+           };
+*/
+           $('.tab2').click(function(){
+               $(".tab-add").show();
+               $('.list-nav > ul > li:nth-child(2) > a').css('color','fff');
+               $(".tab-time").hide();
+               $(".tab-time").hide();
+               $(".tab-sign").hide();
+                   
+           });
+             $('.tab3').click(function(){
+               $(".tab-add").hide();
+               $(".tab-time").show();
+                 $('tab-time').find('li > a').css('color', 'fff');
+                 console.log('hi');
+               $(".tab-sign").hide();
+                   
+           });
+             $('.tab1').click(function(){
+               $(".tab-add").hide();
+               $(".tab-time").hide();
+               $(".tab-sign").show();
+                   
+           });
+        
+        });
+
+    
+    </script>
+
+</body>
+
+</html>

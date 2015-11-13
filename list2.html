@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Payment</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css2/bootstrap-datepicker.css" rel="stylesheet" media="screen">
+    <link href="css2/bootstrap-datepaginator1.min.css" rel="stylesheet" media="screen">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/datepickpaginator.css" type="text">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#"><img src="img/logo-stv.png" alt="STV-LOGO"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Rate card</a></li>
+                    <li><a href="#">Summary<span>(2)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile</a>
+                        <ul class="dropdown-menu profile-dropdown">
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <img src="img/carosol-indicator1.png" class="img-circle">
+                                    </span>Adreaa paulwaker
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Mange Pickups</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    
+    <!-- Page Content -->
+    <div class="container lst2pad">
+        <div class="row">
+            <!-- Tabs -->
+            <div class="list-nav">
+	           <ul class="list-inline">
+                    <li class="clrbk"><a href="#" class="">1.Sign-up</a></li>
+                    <li><a href="#" class="">2.Address</a></li>
+                    <li><a href="#" class="">3.Timings</a></li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <!-- 1.Sign in -->
+                    <div class="tab-sign">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <form class="signin">
+                                    <div class="form-group lsrmg">
+                                        <input class=" infln" type="textbox" placeholder="FULL NAME">
+                                        <input class="inph" type="number" placeholder="PHONE NUMBER">
+                                        <input class="inpw" type="password" placeholder="PASSWORD">
+                                        <a href="#"  class="btn btn-sl tab2">SIGN UP</a>
+                                    </div>
+                                </form>
+                                <form class="login">
+                                    <div class="form-group lsrmg">  
+                                        <input class=" infln" type="textbox" placeholder="FULL NAME">
+                                        <input class="inpw" type="password" placeholder="PASSWORD">
+                                        <a href="#" class="pull-right frgpw">Forget Password?</a>
+                                        <a  href="#"  class="btn btn-sl tab2">LOG IN</a>
+                                    </div>
+                                </form>
+                                <div class="modal-footer popfot">
+                                    <div class="signin"> 
+                                        <span>Already a User ?</span>
+                                            <a href="#" class="log">Login </a>                               
+                                        <span>here</span>
+                                    </div>
+                                    <div class="login"> 
+                                        <span>New User ?</span>
+                                        <a href="#"  class="sign">Sign in </a>                               
+                                        <span>here</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                    <!-- 2.Address -->
+                    <div class="tab-add">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <form>
+                                <div class="form-group lsrmg">
+                                    <input class=" inad" type="textbox" placeholder="Address">
+                                    <input class="inad1" type="number" placeholder="Address line 1">
+                                    <input class="inad1" type="password" placeholder="Address line 2">
+                                    <a href="#"  class="btn btn-sl tab3">CONTINUE</a>
+                                </div>
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+                    <!-- 3.Time -->
+                    <div class="tab-time">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="datepicker-wrapper">   
+                                    <div class="container-fluid">
+                                        <div class="row" style="">
+                                            <div class="col-md-1 col-lg-1 col-sm-1 col-xs-1 prev_date_slider datebg" onclick="prevSlide_date_paginator()">
+                                             <img src="img/previous.png" class="pull-left img-responsive datearw" alt="previous">
+                                          </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 col-lg-10 datepad">
+                                            <center>
+                                                <div class="time" id="dateslider">
+                                                </div>
+                                            </center>
+                                        </div>
+                                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 datebg" onclick="nextSlide_date_paginator()">                                           <img src="img/next.png" class="pull-right img-responsive datearw" alt="next"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 tmepad">
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
+                                                <label for="inlineRadio1"> 9AM-10.00AM </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+                                                <label for="inlineRadio2">1PM-2.00PM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <input type="radio" id="inlineRadio3" value="option3" name="radioInline">
+                                                <label for="inlineRadio3">4.30PM-5.30PM</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 tmepad">
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <input type="radio" id="inlineRadio4" value="option4" name="radioInline">
+                                                <label for="inlineRadio4">10.30AM-11.30AM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <input type="radio" id="inlineRadio5" value="option5" name="radioInline">
+                                                <label for="inlineRadio5">3.00PM-4.00PM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                                <div class="col-md-12 pktxt">
+                                    <a href="#"  class="btn">BOOK PICKUP</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Page Content-->
+       
+    <!-- Footer -->
+    <footer class="fot">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 fot-pad">
+                    <ul class="list-inline">
+                        <li><a href="#"><img src="img/linkedin.png" alt="linkedin"></a></li>
+                        <li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="img/fb.png" alt="facebook"></a></li>
+                        <li>|</li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepickpaginator.js"></script>
+
+
+
+ <script type="text/javascript">
+    
+        $(document).ready(function(){
+           $(".login").hide();
+           $(".tab-add").hide();
+           $(".tab-time").hide();
+            $(".log").click(function(){
+              $(".login").show('slow');
+                $(".signin").hide('slow');
+            });
+             $(".sign").click(function(){
+              $(".login").hide('slow');
+                $(".signin").show('slow');
+            });
+           $('.tab2').click(function(){
+               $(".tab-add").show();
+               $('.list-nav > ul > li:nth-child(2)').addClass('clrbk');
+                $('.list-nav > ul > li:nth-child(2)>a').css('color','#fff');
+               $(".tab-time").hide();
+               $(".tab-time").hide();
+               $(".tab-sign").hide();
+                   
+           });
+             $('.tab3').click(function(){
+               $(".tab-add").hide();
+               $(".tab-time").show();
+                 $('.list-nav > ul > li:nth-child(3)').addClass('clrbk');
+                $('.list-nav > ul > li:nth-child(3)>a').css('color','#fff');
+               $(".tab-sign").hide();
+                   
+           });
+        
+        });
+        
+    
+    </script>
+
+</body>
+
+</html>
