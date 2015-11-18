@@ -58,7 +58,7 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 
 .intro-message{
-    padding-top: 80px;
+    padding-top: 110px;
 }
 .intro-message > h1{
     font-size: 50px;
@@ -177,28 +177,35 @@ body, h1,h2,h3,h4,h5,h6 {
 }
     
 
-#quote-carousel .carousel-indicators {
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    margin-right: -19px;
+ .carousel-indicators .active {
+    width: 49px;
+    height: 49px;
+    margin: 0;
+    background-color: transparent;
+     margin-right: 10px;
+    }
+.carousel-indicators{
+    margin-top: 20px;
+    position: relative; bottom:0px;
+    
 }
-    .caroselimgs {
-    width: 137px;
-    }
-    #quote-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 60px;
-    }
-    #quote-carousel .carousel-indicators li {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.4s;
+ .carousel-indicators > li{   
+    width: 49px;
     border: none;
-}
+    background: transparent;
+    height: 48px;
+     text-indent: 0;
+ }
+  .carousel-indicators > li:nth-child(1) > img{  
+    margin-left: -25px;
+    position: absolute;
+     
+  }
+.carousel-indicators > li:nth-child(2) > img{  
+    margin-left: -25px;
+    position: absolute;
+    
+  }
     .carosel1 {
     height: 465px;
     margin-top: 30px;
@@ -234,6 +241,7 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 .fot-pad > ul > li:nth-child(4),li:nth-child(5){
     margin-bottom: 6px;
+    margin-top: 5px;
 }
 .fot-pad > ul > li:nth-child(5) >a {
     color: #fff;
@@ -285,7 +293,7 @@ body, h1,h2,h3,h4,h5,h6 {
 .lstpad{
      padding-top:100px; 
     padding-bottom:50px;
-    height: 100%
+    min-height: 100%
 }
 .lstpad > div:nth-child(2){
     margin-top: 20px;
@@ -331,8 +339,8 @@ body, h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 .profile-dropdown > li:first-child >a{
- padding-right: 0px;
-    padding-left: 0px;
+ padding-right: 10px;
+    padding-left: 10px;
 }
 .profile-dropdown > li:first-child > a > span{
     margin-right: 5px;
@@ -341,11 +349,17 @@ body, h1,h2,h3,h4,h5,h6 {
     width:50px; 
     height:50px;
 }
+.edt-pad > div > div:first-child > div {
+    text-align: center;
+}
+.edt-pad > div > div:first-child > div > img {
+        width: 100%;
+    }
 /* List 2 */
 .lst2pad{
     padding-top:100px;
     padding-bottom: 50px;
-    min-height: 650px;
+    min-height: 100%;
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -503,7 +517,7 @@ color: #010101;
 .edt-pad{
     padding-top: 100px;
     padding-bottom: 50px;
-    min-height: 650px;
+    min-height: 100%;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -529,7 +543,7 @@ color: #010101;
     padding-bottom: 50px;
     padding-left:10%; 
     padding-right:10%; 
-    min-height: 650px;
+    min-height: 100%;
 }
 .hppad > div{
     border-color: #ccc;
@@ -612,9 +626,9 @@ color: #010101;
 /* summary */
 .sumpad{
     padding-top:100px; 
-    padding-left:25%; 
-    padding-right:25%; 
-    min-height:650px;
+    padding-left:20%; 
+    padding-right:20%; 
+    min-height:100%;
 }
 .sumbrd{
     border: 1px solid #ebebeb;
@@ -781,9 +795,20 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 10px;
 }
 /* Responsive css */
-@media (max-width: 767px){
+@media (max-width: 768px){
+    .intro-header{
+        height: 660px;
+    }
+   .navbar-default .navbar-nav > li > a{
+       margin-right: 0px;
+       letter-spacing: 0px;
+   }
+    .mgs-bg> div > ul > li:nth-child(1) > p {
+        letter-spacing: 0px;
+    }
+    
     .intro-message > h1{
-       font-size: 31px;
+       font-size: 28px;
     line-height: 36px;
     font-weight: 900;
     }
@@ -870,3 +895,16 @@ input[type=number]::-webkit-outer-spin-button {
     
     width: 32%;
     }
+    .edt-pad > div > div:first-child > div > img {
+        width: 80%;
+    }
+}
+@media only screen and (min-device-width: 480px)
+    and (max-device-width: 640px) 
+    and (orientation: landscape) {
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+        max-height: 200px;
+    }
+}
+
+   

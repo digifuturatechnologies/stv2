@@ -27,8 +27,29 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
 <style>
-
+    ::-ms-clear {
+      display: none;
+  }
+    ::-ms-reveal {
+    width : 0;
+    height: 0;
+}
+    textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+   
 </style>
 </head>
 
@@ -197,10 +218,9 @@
                 <div class="col-md-12">
                     <h3>What our customer think about us</h3>
                 </div>
-                <div class="col-lg-6  col-lg-offset-3" data-wow-delay="0.2s">
-                    <div class=" carosel1 carousel slide " data-ride="carousel" id="quote-carousel">
-                        <div class="carousel-inner text-center">
-                            <!-- Quote 1 -->
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="myCarousel" class="carousel slide carosel1" data-ride="carousel">
+                        <div class="carousel-inner text-center" role="listbox">
                             <div class="item active">
                                 <div class="row">
                                     <div class="col-md-12 crtxt">
@@ -212,34 +232,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Quote 2 -->
                             <div class="item">
-                                <div class="row">
-                                    <div class="col-md-12 crtxt">
-                                        <div class="row">
-                                            <img src="img/aviator.png" alt="slider2">
-                                        </div>
-                                        <p> Andrea Pierce</p>
-                                        <p>Et harum qiudem rerum facilis est et expedita distictio.Nams impedit</p>
+                                <div class="col-md-12 crtxt">
+                                    <div class="row">
+                                        <img src="img/aviator.png" alt="slider2">
                                     </div>
+                                    <p> Andrea Pierce</p>
+                                    <p>Et harum qiudem rerum facilis est et expedita distictio.Nams impedit</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Slider Indicators-->
-                <div class="col-md-8 col-md-offset-4">
-                    <div class=" slide" data-ride="carousel" id="quote-carousel">
-                        <ol class="carousel-indicators caroselimgs ">
-                            <li data-target="#quote-carousel" data-slide-to="1">
-                                <img class="img-responsive" src="img/carosol-indicator1.png" alt="indiactor1">
-                            </li>
-                            <li data-target="#quote-carousel" data-slide-to="2">
-                                <img class="img-responsive" src="img/carosol-indicator2.png" alt="indicator2">
-                            </li>
-                        </ol>
-                    </div>
-                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <ol class="carousel-indicators" style="">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active">
+                        <img src="img/carosol-indicator1.png" alt="carsol1">
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="1">
+                        <img src="img/carosol-indicator2.png" alt="carsol2">
+                    </li>
+                </ol>
             </div>
         </div>
     </div>
