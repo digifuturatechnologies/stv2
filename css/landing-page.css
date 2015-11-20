@@ -275,7 +275,7 @@ body, h1,h2,h3,h4,h5,h6 {
 .au-pad{
     padding-top: 70px;
     padding-bottom: 90px;
-    min-height: 650px;
+    min-height: 100%;
 }
 .au-pad h3{
     margin-top: 25px;
@@ -906,5 +906,24 @@ input[type=number]::-webkit-outer-spin-button {
         max-height: 200px;
     }
 }
-
+ ::-ms-clear {
+    display: none;
+}
+::-ms-reveal {
+    width : 0;
+    height: 0;
+}
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
    
