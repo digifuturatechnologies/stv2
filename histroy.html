@@ -128,6 +128,7 @@
                                     <li>Milk</li>
                                 </ol>  
                             </div>
+                            <a href="#"class="pull-right" data-toggle="modal" data-target="#areyousure" data-dismiss="model">Cancel</a>
                         </div>
                     </div>
                 </div>
@@ -164,6 +165,7 @@
                                     <li>Milk</li>
                                 </ol>  
                             </div>
+                            <a href="#"class="pull-right" data-toggle="modal" data-target="#areyousure" data-dismiss="model">Cancel</a>
                         </div>
                     </div>
                 </div>
@@ -268,6 +270,26 @@
         </div>
     </footer>
     <!--/. Footer -->
+    
+    <!-- Cancel pick up Pop up-->
+    <div class="modal fade" id="areyousure" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog popbox" role="document">
+            <div class="modal-content brd0">
+                <div class="modal-header">
+                    <a  href="#" type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</a>
+                </div>
+                <div class="modal-body stxt">
+                    <h4>Are you sure want to cancel the pickup?</h4>
+                    <ul class="list-inline">
+                        <li><a href="#" class="btn">Yes</a></li>
+                        <li ><a href="#" class=" btn">No</a></li>
+                    </ul>
+                    <div class="modal-footer popfot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Cancel pick up Pop up-->
    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -283,15 +305,28 @@
             $(".his-con").hide();
             $(".more").click(function(){
               $(".show-more").toggle('slow');
+                $(this).text(function(i, v){
+               return v === 'MORE' ? 'LESS' : 'MORE'
+            })
             });
             $(".more2").click(function(){
                 $(".show-more2").toggle('slow');
+                 $(this).text(function(i, v){
+               return v === 'MORE' ? 'LESS' : 'MORE'
+            })
+                
             });
             $(".more-h1").click(function(){
                 $(".show-more3").toggle('slow');
+                 $(this).text(function(i, v){
+               return v === 'More' ? 'LESS' : 'More'
+            })
             });
             $(".more-h2").click(function(){
                 $(".show-more4").toggle('slow');
+                 $(this).text(function(i, v){
+               return v === 'More' ? 'LESS' : 'More'
+            })
             });
             $(".history").click(function(){
                 $(".up-con").hide('slow');
